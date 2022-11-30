@@ -17,3 +17,12 @@ img{
     text-align: center;
     color:#F1DDC2;
 }
+
+.photoDisplay{
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    background-color:#BD9576;
+    padding: 10%;
+    margin-top:10%;
+}

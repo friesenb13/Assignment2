@@ -15,75 +15,36 @@ var app = new Framework7({
 });
 var mainView = app.views.create('.view-main')
 
-// var $$ = Dom7;
-// var lat;
-// var long;
-// var map;
-// var marker;
-// var geoOpts ={
-//     enableHighAccuracy: true 
-// }
 
-// $$(document).on('page:init', '.page[data-name="page2"]', function () {
-//     // Page 2 fun here
-//      map = new google.maps.Map(document.getElementById('map'),{
-
-//         zoom: 18,
-//         center: {lat: lat, lng: long}
-//     })
-//      marker = new google.maps.Marker({
-//         position: {lat: lat, lng: long},
-//         map: map
-//     })
-//     var watchID;
-
-//     $("#startWatch").on('click', function(){
-//        watchID= navigator.geolocation.watchPosition(watchSuccess, geoError, geoOpts)
-//        $(this).hide();
-//        $("#stopWatch").show()
-//     })
-
-//     $("#stopWatch").on('click', function(){
-//         navigator.geolocation.clearWatch(watchID)
-//         $(this).hide();
-//        $("#startWatch").show()
-//     })
-//     function watchSuccess(position){
-//         console.log(position)
-//         lat= position.coords.latitude
-//         long=position.coords.longitude
-    
-//         var coords = {lat: lat, lng: long}
-//         map.setCenter(coords);
-//         marker.setPosition(coords);
-//         // $("#currentPos").html(lat + "," + long)
-//     }
-// })
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
 
-    // Cordova is now initialized. Have fun!
+    var options={
+        quality: 80, //default is 50
+        destinationType: Camera.DestinationType.FILE_URI //this is the default
+    }
 
-    //Geolocation paramaters
-    
-    //get the location as soon as app loads
-    // navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOpts);
+    $("#takePhoto").on("click", takePic);
+
+    function takePic(){
+        navigator.camera.getPicture(onSuccess, onError, options)
+    }
+    function onSuccess(imageData){
+        console.log(imageData);
+
+        resolveLocalFileSystemURL(imageData, function (fileEntry) {
+            var myNewImage = fileEntry.toURL()
+            console.log(myNewImage);
+            // do something with URL, assign to src or create an html 
+            $("#takePhoto").after("<div class='photoDisplay'><img src='"+ myNewImage + " '></div>")
+        }, onError);
+    }
+
+    function onError(message){
+        alert("Photo not taken because" + message)
+    }
 
 
 }
-
-// function geoSuccess(position){
-//     console.log(position)
-//     lat= position.coords.latitude
-//     long=position.coords.longitude
-
-//     var coords = {lat: lat, lng: long}
-//     map.setCenter(coords);
-//     marker.setPosition(coords);
-//     // $("#currentPos").html(lat + "," + long)
-// }
-// function geoError(message){
-//     alert(message.message)
-// }
