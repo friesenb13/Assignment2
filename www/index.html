@@ -52,14 +52,32 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
 
         <div class="view view-main">
             <!-- component will apply to all pages in view -->
-
+            
+ <!-- bottom tolbar -->
+ <div class="toolbar toolbar-bottom">
+    <div class="toolbar-inner">
+    <a href="/page2/" class="link">Page2</a>
+    <a href="/page1/" class="link">Home</a>
+    <a href="/page3/" class="link">Page3</a>
+    </div>
+</div>
             <div data-name="home" class="page">
                 <!-- component is fixed to the page -->
                 <div class="page-content">
 
-                    <h1>test</h1>
-                    <a href="/page2/" class="button button-fill color-yellow">Page2</a>
+                    <h1>Welcome</h1>
+                    <!-- <a href="/page2/" class="button button-fill color-yellow">Page2</a> -->
  
+                    <div class="item-content item-input">
+                        <div class="item-media">
+                          <i class="icon demo-list-icon" id="demo-color-picker-wheel-value"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-input-wrap">
+                            <input type="text" placeholder="Color" readonly="readonly" id="demo-color-picker-wheel" />
+                          </div>
+                        </div>
+                      </div>
 
 
                 </div>

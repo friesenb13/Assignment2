@@ -14,13 +14,12 @@ var app = new Framework7({
     // ... other parameters
 });
 var mainView = app.views.create('.view-main')
-
-
+var $$  = Dom7;
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-
+    $$(document).on('page:init', '.page[data-name="page2"]', function(e){
     var options={
         quality: 80, //default is 50
         destinationType: Camera.DestinationType.FILE_URI //this is the default
@@ -45,6 +44,6 @@ function onDeviceReady() {
     function onError(message){
         alert("Photo not taken because" + message)
     }
-
+    })
 
 }
