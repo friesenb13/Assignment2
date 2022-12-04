@@ -1,5 +1,10 @@
 /*  your custom styles here  */
 
+@font-face {
+    font-family: "comfortaa";
+    src: url("./Comfortaa-VariableFont_wght.ttf");
+}
+
 
 html{
     min-height:100vh;
@@ -15,6 +20,8 @@ img{
 
 .page-content {
     background-color: #5D576B; 
+    color:#fff;
+    font-family: "comfortaa";
 }
 
 .flex-wrapper{
