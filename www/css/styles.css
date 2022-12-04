@@ -19,9 +19,13 @@ img{
 }
 
 .page-content {
-    background-color: #5D576B; 
+    background-color: #302D38; 
     color:#fff;
     font-family: "comfortaa";
+}
+
+h1{
+    color:#fff;
 }
 
 .flex-wrapper{
@@ -31,22 +35,11 @@ img{
     text-align: center;
 }
 
-#takePhoto{
-    background-color: #BD9576;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width:200px;
-    padding: 7%;
-    text-align: center;
-    color:#F1DDC2;
-}
-
 .photoDisplay{
     border-radius: 5px;
     display:flex;
     align-items: center;
-    background-color:#BD9576;
+    /* background-color:#BD9576; */
     padding: 10%;
     margin-top:10%;
 }
@@ -58,32 +51,31 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#5D576B;
     background: linear-gradient(to bottom right, #FFF481, #A0DDF7);
     box-sizing: border-box;
     border-radius: 15%;
   }
 
   .demo-swiper {
-    margin: 0px 0 35px;
+    margin: 0px 0 20px;
     font-size: 18px;
-    height: 200px;
+    height: 175px;
     width:200px;
   }
 
-  /* .card1{
+  .card1{
     translate:-50px;
   }
   .card2{
     translate:30px;
-  } */
+  }
   
 
   #yourColor{
     height:75px;
     width:75px;
     margin:20px;
-    border:#000;
-    border-width: 3px;
     border-radius: 10%;
     margin:0;
   }
@@ -111,7 +103,7 @@ img{
     --f7-bars-link-color: #5D576B;
     --f7-navbar-subtitle-text-color: rgba(255,255,255,0.85);
     --f7-bars-border-color: transparent;
-    --f7-tabbar-link-active-color: #fff;
+    --f7-tabbar-link-active-color: #5D576B;
     --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
     --f7-sheet-border-color: transparent;
     --f7-tabbar-link-active-border-color: #fff;

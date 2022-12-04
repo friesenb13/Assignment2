@@ -28,6 +28,7 @@ $$(document).on('page:init', '.page[data-name="home"]', function(e){
 $("#random").click(function() {
     random = "#" + Math.floor(Math.random()*16777215).toString(16);
     $("#yourColor").css("background-color", random);
+    $("#yourColor2").css("background-color", random);
     $("#number").html(random);
   });
 
@@ -65,7 +66,12 @@ function onDeviceReady() {
     }
 
 
-
+    $("#random").click(function() {
+        random = "#" + Math.floor(Math.random()*16777215).toString(16);
+        $("#yourColor").css("background-color", random);
+        $("#number").html(random);
+      });
+    
 
 
     
