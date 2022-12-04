@@ -1,10 +1,26 @@
 /*  your custom styles here  */
 
+
+html{
+    min-height:100vh;
+    margin:0;
+}
+
 img{
     max-width:80%;
     border-radius: 5px;
     margin:auto;
 
+}
+
+body {
+    background-color: #e2e2e2; 
+}
+
+.flex-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #takePhoto{
