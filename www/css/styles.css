@@ -108,3 +108,31 @@ h1{
     --f7-sheet-border-color: transparent;
     --f7-tabbar-link-active-border-color: #fff;
   }
+
+
+  /* SVG */
+  .cls-1, .cls-2 {
+    fill: none;
+  }
+
+  .cls-1, .cls-3 {
+    stroke: #231f20;
+    stroke-miterlimit: 10;
+  }
+
+  .cls-4 {
+    fill: #eecde2;
+  }
+
+  .cls-5 {
+    clip-path: url(#clippath-1);
+  }
+
+  .cls-6 {
+    clip-path: url(#clippath);
+  }
+
+  .cls-3 {
+    fill: #fbf49c;
+    stroke-width: 1px;
+  }
