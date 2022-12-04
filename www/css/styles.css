@@ -13,14 +13,14 @@ img{
 
 }
 
-body {
+.page-content {
     background-color: #e2e2e2; 
 }
 
 .flex-wrapper{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 #takePhoto{
@@ -42,3 +42,27 @@ body {
     padding: 10%;
     margin-top:10%;
 }
+
+
+.demo-swiper .swiper-slide {
+    font-size: 25px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+  }
+
+  .demo-swiper {
+    margin: 0px 0 35px;
+    font-size: 18px;
+    height: 300px;
+    width:300px;
+  }
+
+  #yourColor{
+    height:100px;
+    width:100px;
+  }
