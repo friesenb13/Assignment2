@@ -43,7 +43,7 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/framework7-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Assignment 2</title>
+    <title>Grounded</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
  <!-- bottom tolbar -->
  <div class="toolbar toolbar-bottom">
     <div class="toolbar-inner">
-    <a href="/page2/" class="link">Page2</a>
+    <a href="/page2/" class="link">Camera</a>
     <a href="/page1/" class="link">Home</a>
     <a href="/page3/" class="link">Page3</a>
     </div>
@@ -67,34 +67,43 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
                     <div class="flex-wrapper">
                     <h1>Get Grounded</h1>
                     
-                    <h4>Feeling anxious?</h4>
-                    <h4>Dissociated?</h4>
-                    <h3>Reconnect to your environment</h3>
+<!-- card swipe -->
+<div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
+class="swiper swiper-init demo-swiper">
+<div class="swiper-pagination"></div>
+<div class="swiper-wrapper">
+  <div class="swiper-slide">Anxious?</div>
+  <div class="swiper-slide">Dissociated?</div>
+  <div class="swiper-slide">Feeling disconnected?</div>
+  <div class="swiper-slide">Panicking?</div>
+  
+</div>
+</div>
+<!--  -->
 
-
-                    <div class="block-title">1 Slide Per View, 50px Between</div>
+<!-- card swipe -->
                     <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
-                      class="swiper swiper-init demo-swiper">
+                      class="swiper swiper-init demo-swiper card2">
                       <div class="swiper-pagination"></div>
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Generate a random color</div>
+                        <div class="swiper-slide">Look around you to find things that are that color</div>
+                        <div class="swiper-slide">Go into our camera tab</div>
+                        <div class="swiper-slide">Snap a pic!</div>
                         
                       </div>
                     </div>
 
                     <!-- color generator -->
                     <div>
-                        <button id="random">
-                          New Color
+                        <button id="random" class="button button-fill button-large">
+                          Random Color
                         </button>
                       </div>
                     <div>
-                        <h2>This is your color!</h2><h2 id="number">______</h2>
+                        <h2>This is your color!</h2><div id="yourColor"></div><h2 id="number">______</h2>
                       </div>
-                      <div id="yourColor"></div>
+                      
                     
                       <!--  -->
 

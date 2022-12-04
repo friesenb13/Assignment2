@@ -15,15 +15,14 @@ var app = new Framework7({
             url: 'pages/page3.html',
         },
     ],
-    colorPicker: {
-        modules: ['hb-spectrum', 'hue-slider'],
-        url: 'select-color/',
-      }
+   
     // ... other parameters
 });
 var mainView = app.views.create('.view-main')
 var $$  = Dom7;
 
+// page 1 stuff
+$$(document).on('page:init', '.page[data-name="home"]', function(e){
 // https://codepen.io/Suriteka/pen/dXmBXM
 
 $("#random").click(function() {
@@ -32,6 +31,7 @@ $("#random").click(function() {
     $("#number").html(random);
   });
 
+})
 
 //page 2 camera stuff
 document.addEventListener('deviceready', onDeviceReady, false);
@@ -73,5 +73,4 @@ function onDeviceReady() {
 
 }
 
-// https://codepen.io/tdora28/pen/YzaKBxJ
 
