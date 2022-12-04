@@ -12,7 +12,7 @@ html{
 }
 
 img{
-    max-width:80%;
+    max-width:70%;
     border-radius: 5px;
     margin:auto;
 
@@ -37,11 +37,18 @@ h1{
 
 .photoDisplay{
     border-radius: 5px;
-    display:flex;
-    align-items: center;
     /* background-color:#BD9576; */
     padding: 10%;
     margin-top:10%;
+    max-width: 50%;
+}
+
+.gallery{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: center;
+
 }
 
 
@@ -64,12 +71,12 @@ h1{
     width:200px;
   }
 
-  .card1{
+  /* .card1{
     translate:-50px;
   }
   .card2{
     translate:30px;
-  }
+  } */
   
 
   #yourColor{
@@ -107,32 +114,4 @@ h1{
     --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
     --f7-sheet-border-color: transparent;
     --f7-tabbar-link-active-border-color: #fff;
-  }
-
-
-  /* SVG */
-  .cls-1, .cls-2 {
-    fill: none;
-  }
-
-  .cls-1, .cls-3 {
-    stroke: #231f20;
-    stroke-miterlimit: 10;
-  }
-
-  .cls-4 {
-    fill: #eecde2;
-  }
-
-  .cls-5 {
-    clip-path: url(#clippath-1);
-  }
-
-  .cls-6 {
-    clip-path: url(#clippath);
-  }
-
-  .cls-3 {
-    fill: #fbf49c;
-    stroke-width: 1px;
   }

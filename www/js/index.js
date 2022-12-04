@@ -57,7 +57,7 @@ function onDeviceReady() {
             var myNewImage = fileEntry.toURL()
             console.log(myNewImage);
             // do something with URL, assign to src or create an html 
-            $("#takePhoto").after("<div class='photoDisplay'><img src='"+ myNewImage + " '></div>")
+            $("#takePhoto").after("<div class='photoDisplay' id='photoBack'><img src='"+ myNewImage + " '></div>")
         }, onError);
     }
 
@@ -69,12 +69,9 @@ function onDeviceReady() {
     $("#random").click(function() {
         random = "#" + Math.floor(Math.random()*16777215).toString(16);
         $("#yourColor").css("background-color", random);
-        $("#yourColor2").css("fill", random);
+        $("#photoBack").css("background-color", random);
         $("#number").html(random);
       });
-    
-
-
     
     })
 
