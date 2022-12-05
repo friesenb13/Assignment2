@@ -49,15 +49,40 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
 <body>
     <div id="app">
         <!-- panel components go here -->
-
+        <div class="panel panel-right panel-right-1 panel-cover panel-resizable panel-init">
+          <div class="block">
+            <p>References</p><div><a class="panel-close" href="#"><img src="./img/close.png"></a></div>
+            <p>
+              <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by th studio - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/color" title="color icons">Color icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/eye" title="eye icons">Eye icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/calm" title="calm icons">Calm icons created by noomtah - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by alimasykurm - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/meditation" title="meditation icons">Meditation icons created by Freepik - Flaticon</a>
+            </p>
+            
+          </div>
+        </div>
         <div class="view view-main">
             <!-- component will apply to all pages in view -->
+
+            <!-- top toolbar -->
+            <div class="toolbar toolbar-top">
+              <div class="toolbar-inner">
+                <a href="/page1/" class="link"><img src="./img/meditation.png" class="info"></a>
+                <h1>Get Grounded</h1>
+                <a class=" panel-open" href="#" data-panel=".panel-right-1"><img src="./img/info.png" class="info"></a>            
+               </div>
+            </div>
+            
+
  <!-- bottom tolbar -->
  <div class="toolbar toolbar-bottom">
     <div class="toolbar-inner">
-      <a href="/page1/" class="link"><img src="./img/harmony.png"></a>
+      <a href="/page3/" class="link"><img src="./img/harmony.png"></a>
     <a href="/page2/" class="link"><img src="./img/wheel.png"></a>
-    <a href="/page3/" class="link"><img src="./img/eye.png"></a>
+    <a href="/page4/" class="link"><img src="./img/eye.png"></a>
     </div>
 </div>
             <div data-name="home" class="page">
@@ -65,10 +90,10 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
                 <div class="page-content">
 
                     <div class="flex-wrapper">
-                    <h1>Get Grounded</h1>
+                    <!-- <h1>Get Grounded</h1> -->
                     
 <!-- card swipe -->
-<div class="card1">
+<div >
 <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
 class="swiper swiper-init demo-swiper">
 <div class="swiper-pagination"></div>
@@ -84,11 +109,12 @@ class="swiper swiper-init demo-swiper">
 <!--  -->
 
 <!-- card swipe -->
-<div class="card2">
+<div>
                     <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
                       class="swiper swiper-init demo-swiper card2">
                       <div class="swiper-pagination"></div>
                       <div class="swiper-wrapper">
+                        <div class="swiper-slide">Click the Color Wheel</div>
                         <div class="swiper-slide">Generate a random color</div>
                         <div class="swiper-slide">Look around you to find things that are that color</div>
                         <div class="swiper-slide">Go into our camera tab</div>
@@ -97,6 +123,21 @@ class="swiper swiper-init demo-swiper">
                       </div>
                     </div>
                 </div>
+<!-- card 3 -->
+                <div>
+                  <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50"
+                  class="swiper swiper-init demo-swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Click the Eye</div>
+                    <div class="swiper-slide">Look Around</div>
+                    <div class="swiper-slide">Answer the prompts and type your answers in the spaces</div>
+                    <div class="swiper-slide">-</div>
+                    <div class="swiper-slide">-</div>
+                    
+                  </div>
+                  </div>
+                  </div>
                     
                       
                       

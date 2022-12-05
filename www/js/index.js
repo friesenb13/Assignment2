@@ -14,6 +14,10 @@ var app = new Framework7({
             path: '/page3/',
             url: 'pages/page3.html',
         },
+        {
+            path: '/page4/',
+            url: 'pages/page4.html',
+        },
     ],
    
     // ... other parameters

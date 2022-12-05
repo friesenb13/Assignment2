@@ -9,6 +9,7 @@
 html{
     min-height:100vh;
     margin:0;
+    
 }
 
 img{
@@ -37,6 +38,7 @@ h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-evenly;
     
 }
 
@@ -124,4 +126,19 @@ h1{
     --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
     --f7-sheet-border-color: transparent;
     --f7-tabbar-link-active-border-color: #fff;
+  }
+
+  .toolbar-top{
+    background-color:#302D38;
+    font-family: "comfortaa";
+  }
+
+  .info{
+    margin-top:10px;
+    max-height: 100%;
+  }
+
+  .panel-right{
+    font-family: "comfortaa";
+
   }
