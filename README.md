@@ -1,4 +1,4 @@
-# Get Grounded
+# Get Grounded &#127793;
 
 This app is designed to incorporate your phone into a mindfulness exercise.
 <p>There are three different mindfullness exercises. One section promps the user to take photos of objects of a certain color that is randomly selected.
