@@ -23,23 +23,33 @@ var $$  = Dom7;
 
 // page 1 stuff
 $$(document).on('page:init', '.page[data-name="home"]', function(e){
-// https://codepen.io/Suriteka/pen/dXmBXM
 
-$("#random").click(function() {
-    random = "#" + Math.floor(Math.random()*16777215).toString(16);
-    $("#yourColor").css("background-color", random);
-    $("#yourColor2").css("background-color", random);
-    $("#number").html(random);
-  });
+// $("#random").click(function() {
+//     random = "#" + Math.floor(Math.random()*16777215).toString(16);
+//     $("#yourColor").css("background-color", random);
+//     $("#yourColor2").css("background-color", random);
+//     $("#number").html(random);
+//   });
 
 })
 
-//page 2 camera stuff
+//page 2 
 document.addEventListener('deviceready', onDeviceReady, false);
+
 
 function onDeviceReady() {
 
     $$(document).on('page:init', '.page[data-name="page2"]', function(e){
+// https://codepen.io/Suriteka/pen/dXmBXM
+
+        var random ="#" + Math.floor(Math.random()*16777215).toString(16);
+
+        $("#random").click(function() {
+            random = "#" + Math.floor(Math.random()*16777215).toString(16);
+            $("#yourColor").css("background-color", random);
+            $("#number").html(random);
+          });
+
     var options={
         quality: 80, //default is 50
         destinationType: Camera.DestinationType.FILE_URI //this is the default
@@ -57,7 +67,8 @@ function onDeviceReady() {
             var myNewImage = fileEntry.toURL()
             console.log(myNewImage);
             // do something with URL, assign to src or create an html 
-            $("#takePhoto").after("<div class='photoDisplay' id='photoBack'><img src='"+ myNewImage + " '></div>")
+            $("#test").after("<div class='photoDisplay'><img src='"+ myNewImage + " '></div>");
+            $(".photoDisplay").css("background-color", random);
         }, onError);
     }
 
@@ -66,12 +77,7 @@ function onDeviceReady() {
     }
 
 
-    $("#random").click(function() {
-        random = "#" + Math.floor(Math.random()*16777215).toString(16);
-        $("#yourColor").css("background-color", random);
-        $("#photoBack").css("background-color", random);
-        $("#number").html(random);
-      });
+    
     
     })
 
