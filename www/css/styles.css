@@ -76,8 +76,8 @@ h1{
   .demo-swiper {
     margin: 0px 0 20px;
     font-size: 18px;
-    height: 175px;
-    width:200px;
+    height: 250px;
+    width:300px;
   }
   
 
@@ -138,6 +138,98 @@ h1{
     margin:0;
   }
 
-  #my-form{
-    background-color: yellow;
+
+  /* Breathe Animation */
+
+  @keyframes breathe{
+    from{
+    background-color:#302D38;
+    /* scale:75%; */
+  transform:scale(75%);}
+    to{
+    background-color:#FFF481;
+    /* scale:150%; */
+    transform:scale(155%);}
+}
+  
+
+  .breathe{
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    animation-name:breathe;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+    /* margin:auto; */
+    margin-top: 5%;
+    margin-bottom:5%;
+
+  }
+
+  @font-face {
+    font-family: "puff";
+    src: url(./DynaPuff[wdth\,wght].ttf);
+  }
+
+@keyframes breatheIn{
+  from{
+    font-variation-settings:"wght"400;
+    font-size: medium;
+    color:#302D38;
+    opacity: 0%;
+
+  }
+  to{
+    font-variation-settings:"wght"700;
+    font-size:x-large;
+    color:#7ad0f4;
+    opacity: 100%;
+
+  }
+}
+@keyframes breatheOut{
+  from{
+    font-variation-settings:"wght"400;
+    font-size: medium;
+    color:#302D38;   
+     opacity:0%;
+  }
+  to{
+    font-variation-settings:"wght"700;
+    font-size:x-large;
+    color:#7ad0f4;    
+    opacity: 100%;
+
+  }
+}
+
+  .breatheIn{
+    color:#302D38;
+    font-family:puff;
+    font-weight:400 700;
+    margin-top:75px;
+    animation-name:breatheIn;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+
+  }
+
+  .breatheOut{
+    color:#302D38;
+    font-family:puff;
+    font-weight:400 700;
+    animation-name:breatheIn;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-delay:4s;
+    animation-timing-function: linear;
+    opacity:0%
+    
+
   }
