@@ -42,24 +42,15 @@ h1{
     
 }
 
-.photoDisplay{
-  display:flex;
-  flex-direction: row;
-    border-radius: 5px;
-    padding: 5%;
-    margin-top:5%;
-    max-width: 50%;
-    align-items: center;
-    justify-content:center;
-}
 
-/* .gallery{
+
+.photoDisplay{
+  border-radius: 5px;
   display:flex;
-  flex-direction: row;
-  flex-wrap:wrap;
   align-items: center;
-  justify-content: space-evenly;
-} */
+  padding: 10%;
+  margin-top:10%;
+}
 
 .row{
   display:flex;
@@ -145,4 +136,8 @@ h1{
 
   .input{
     margin:0;
+  }
+
+  #my-form{
+    background-color: yellow;
   }
