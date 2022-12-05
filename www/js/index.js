@@ -28,12 +28,7 @@ var $$  = Dom7;
 // page 1 stuff
 $$(document).on('page:init', '.page[data-name="home"]', function(e){
 
-// $("#random").click(function() {
-//     random = "#" + Math.floor(Math.random()*16777215).toString(16);
-//     $("#yourColor").css("background-color", random);
-//     $("#yourColor2").css("background-color", random);
-//     $("#number").html(random);
-//   });
+
 
 })
 
@@ -86,5 +81,27 @@ function onDeviceReady() {
     })
 
 }
+
+// document.addEventListener('deviceready', onDeviceReady, false);
+
+// page 3- breathing
+// function onDeviceReady() {
+
+    $$(document).on('page:init', '.page[data-name="page3"]', function(e){
+
+        
+        $("#breathe").on("click", function(){
+
+        navigator.vibrate(4000, 4000, 4000, 4000)
+        console.log(navigator.vibrate)
+        } );
+
+        $("#stop").on("click", function(){
+            navigator.vibrate(0)
+        })
+    
+    })
+
+
 
 
