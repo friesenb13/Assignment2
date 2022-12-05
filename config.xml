@@ -8,6 +8,6 @@
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-        <icon src="res/icon/camera.png" />
+        <icon src="res/icon/meditation.png" />
 
 </widget>
