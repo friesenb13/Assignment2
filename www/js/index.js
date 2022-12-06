@@ -66,7 +66,7 @@ function onDeviceReady() {
             var myNewImage = fileEntry.toURL()
             console.log(myNewImage);
             // do something with URL, assign to src or create an html 
-            $("#test").after("<div class='photoDisplay'><img src='"+ myNewImage + " '></div>");
+            $("#display").after("<div class='photoDisplay'><img src='"+ myNewImage + " '></div>");
             $(".photoDisplay").css("background-color", random);
         }, onError);
     }
