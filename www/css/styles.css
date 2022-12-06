@@ -147,11 +147,9 @@ h1{
   @keyframes breathe{
     from{
     background-color:#302D38;
-    /* scale:75%; */
   transform:scale(75%);}
     to{
     background-color:#FFF481;
-    /* scale:150%; */
     transform:scale(155%);}
 }
   
@@ -165,7 +163,6 @@ h1{
     animation-iteration-count:infinite;
     animation-direction:alternate;
     animation-timing-function:linear;
-    /* margin:auto; */
     margin-top: 5%;
     margin-bottom:5%;
 
